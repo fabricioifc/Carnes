@@ -37,6 +37,11 @@ async function loadRecipes() {
                 .join("")}</ol>
             </div>
           </div>
+          <div class="card-footer">
+            <div class="card-footer-item has-text-centered is-size-7 has-text-gray">
+              <p>A cada 1000g de carne, adicione as quantidades definidas na base de segurança.</p>
+            </div>
+          </div>
         </div>
       </div>
     `;
