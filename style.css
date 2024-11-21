@@ -3,25 +3,19 @@
   --background-dark: #1a1a1a;
   --text-light: #333;
   --text-dark: #e0e0e0;
+  --primary-color: #b23c17;
 }
 body {
   font-family: "Arial", sans-serif;
   background-color: var(--background-light);
   color: var(--text-light);
-  transition: background-color 0.3s, color 0.3s;
 }
 body.dark-mode {
   background-color: var(--background-dark);
   color: var(--text-dark);
 }
-.recipe-card {
-  transition: transform 0.3s ease;
-  background-color: white;
-  overflow: hidden;
-}
 body.dark-mode .recipe-card {
   background-color: var(--background-dark);
-  color: var(--text-dark);
   border: 1px solid var(--text-dark);
 }
 .recipe-image-container {
@@ -29,7 +23,7 @@ body.dark-mode .recipe-card {
   overflow: hidden;
 }
 .recipe-image {
-  height: 250px;
+  height: 200px;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
@@ -41,13 +35,22 @@ body.dark-mode .recipe-card {
   background-color: var(--background-light);
   color: var(--text-light);
 }
-body.dark-mode .footer,
-body.dark-mode h1,
-body.dark-mode h5,
-body.dark-mode p {
+body.dark-mode .footer {
   background-color: var(--background-dark);
   color: var(--text-dark);
 }
 #darkModeToggle {
   margin-right: 10px;
+}
+.title {
+  color: var(--primary-color);
+}
+body.dark-mode .title {
+  color: #ffcccb;
+}
+body.dark-mode h1,
+body.dark-mode h5,
+body.dark-mode p,
+body.dark-mode li {
+  color: var(--text-dark);
 }
