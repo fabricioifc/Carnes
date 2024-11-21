@@ -1,0 +1,198 @@
+[
+    {
+      "title": "Salsichão",
+      "description": "Salsichão artesanal, preparado com um blend especial de especiarias e cozido lentamente para realçar o sabor e a textura suculenta.",
+      "image": "images/salsichao.jpg",
+      "ingredients": [
+        "1000g de carne de pernil suíno",
+        "2g de salsa desidratada",
+        "2g de cebolinha desidratada",
+        "2g de alho desidratado ou 5g de alho em pó",
+        "0,5g de noz-moscada"
+      ],
+      "base": ["18g de sal", "2m de sal de cura", "5g de açúcar"],
+      "preparation": [
+        "Moer a carne em chapa de 8mm",
+        "Pesar os ingredientes e misturar",
+        "Adicionar os ingredientes na carne e misturar",
+        "Deixar em cura por 12 horas",
+        "Embutir em embalagem própria para cozimento",
+        "Cozinhar a 72°C por 2 horas",
+        "Resfriar em água com gelo para interromper o cozimento",
+        "Congelar ou consumir"
+      ]
+    },
+    {
+      "title": "Coglione di Mulo",
+      "description": "Delicado embutido típico do Piemonte, na Itália, conhecido por sua combinação única de carnes, especiarias e vinho branco seco.",
+      "image": "images/coglione.jpg",
+      "ingredients": [
+        "700g de carne de pernil suíno",
+        "200g de retalhos de carne de gado",
+        "100g de toucinho em barra (congelado)",
+        "2g de alho desidratado",
+        "1g de pimenta preta",
+        "0,5g de gengibre em pó",
+        "0,5g de MACIS ou noz-moscada",
+        "10ml de vinho branco seco"
+      ],
+      "base": ["25g de sal", "2g de sal de cura", "10g de açúcar"],
+      "preparation": [
+        "Moer a carne em chapa de 8mm",
+        "Gelar as barras de toucinho",
+        "Pesar os ingredientes e misturar",
+        "Adicionar os ingredientes na carne e misturar",
+        "Deixar em cura por 12 horas",
+        "Embutir os salames em tripa reta",
+        "Maturar até que perca 35% do peso"
+      ]
+    },
+
+    {
+      "title": "Linguiça de Churrasco Mista Gourmet",
+      "description": "Linguiça de churrasco feita com uma combinação de carnes e um toque gourmet de especiarias, perfeita para assados ou grelhados.",
+      "image": "images/linguica_churrasco.jpeg",
+      "ingredients": [
+        "1000g de retalhes de carnes de desossa",
+        "100g de agua gelada",
+        "250g de gordura suína",
+        "2g de cebolinha desidratada",
+        "2g de salsa desidratada",
+        "5g de lemon pepper",
+        "1g de pimenta preta"
+      ],
+      "base": ["25g de sal", "2g de sal de cura", "5g de açúcar"],
+      "preparation": [
+        "Moer a carne em chapa de 5mm",
+        "Adicionar os temperos, a água gelada",
+        "Misturar até formar liga",
+        "Embutir preferencialmente em tripa de porco",
+        "Congelar"
+      ]
+    },
+
+    {
+      "title": "Tender Suíno Defumado/Cozido",
+      "description": "Clássico tender suíno com um toque aromático de especiarias, cuidadosamente defumado e cozido para uma textura macia e sabor único.",
+      "image": "images/tender_suino.jpeg",
+      "ingredients": [
+        "1000g de patinho suíno ou lombo suíno",
+        "0,5g de noz-moscada",
+        "0,2g de canela em pó",
+        "0,2g de cravo em pó",
+        "2g de pimenta preta",
+        "5g de colorau, páprica ou açafrão"
+      ],
+      "base": ["30g de sal", "2g de sal de cura", "5g de açúcar"],
+      "preparation": [
+        "Desossar a peça de carne, ajustando o corte para não ter rebarbas",
+        "Pesar os ingredientes e misturar",
+        "Esfregar os temperos na carne",
+        "Deixar em cura na geladeira (4 dias para cada 2cm de espessura)",
+        "Defumar a frio por 2 horas",
+        "Ensacar e cozinhar a 72°C por 2 horas"
+      ]
+    },
+
+    {
+      "title": "Pastrami de Peito de Gado Defumado Com Dry Rub",
+      "description": "Pastrami artesanal, preparado com peito de gado temperado com um dry rub especial e defumado para um sabor autêntico.",
+      "image": "images/pastrami.jpeg",
+      "ingredients": [
+        "1000g de peito bovino",
+        "0,5g de noz-moscada",
+        "0,2g de canela em pó",
+        "0,2g de cravo em pó",
+        "1g de pimenta preta",
+        "5g de colorau"
+      ],
+      "base": ["30g de sal", "2g de sal de cura", "10g de açúcar"],
+      "preparation": [
+        "Corte o peito de gado. Ajuste para não ter rebarbas",
+        "Pesar os ingredientes e misturar",
+        "Esfregar os temperos na carne",
+        "Deixar em cura na geladeira (4 dias para cada 2cm de espessura)",
+        "Defumar a quente"
+      ]
+    },
+
+    {
+      "title": "Fileto",
+      "description": "Fileto de carne maturado, com temperos selecionados e um processo de defumação ou maturação que intensifica o sabor.",
+      "image": "images/filetto.jpg",
+      "ingredients": [
+        "1000g de mignon suíno ou bovino",
+        "1g de pimenta branca",
+        "0,5g de noz-moscada",
+        "0,2g de canela em pó",
+        "0,2g de cravo em pó",
+        "5g de colorau"
+      ],
+      "base": ["25g de sal", "2g de sal de cura", "5g de açúcar"],
+      "preparation": [
+        "Desossar o filé e ajustar o corte para não ter rebarbas",
+        "Pesar os ingredientes e misturar",
+        "Esfregar os temperos na carne",
+        "Defumar a quente ou levar para maturação com temperatura controlada de 15°C e umidade de 85%",
+        "Congelar"
+      ]
+    },
+
+    {
+      "title": "Hamgurger Gourmet",
+      "description": "Hambúrguer artesanal gourmet, preparado com carnes selecionadas e temperos especiais, ideal para grelhar ou fritar.",
+      "image": "images/hamburguer.jpeg",
+      "ingredients": [
+        "900g de carnes de desossa",
+        "100g de água gelada",
+        "2g de salsa desidratada",
+        "2g de cebolinha desidratada",
+        "2g de alho desidratado",
+        "5g de lemon pepper",
+        "1g de pimenta preta"
+      ],
+      "base": ["23g de sal", "2g de sal de cura", "5g de açúcar"],
+      "preparation": [
+        "Moer a carne em chapa de 5mm",
+        "Adicionar os temperos e a água gelada",
+        "Misturar até formar liga",
+        "Moldar os hambúrgueres",
+        "Congelar"
+      ]
+    },
+
+    {
+      "title": "Tender de Frango Defumado/Cozido",
+      "description": "Tender de frango com um toque de especiarias, cuidadosamente defumado e cozido para uma experiência culinária leve e sofisticada.",
+      "image": "images/tender_frango.jpeg",
+      "ingredients": [
+        "Peito de frango",
+        "0,5g de noz-moscada",
+        "0,2g de canela em pó",
+        "0,2g de cravo em pó",
+        "2g de pimenta preta",
+        "5g de colorau, páprica defumada ou açafrão"
+      ],
+      "base": ["25g de sal", "2g de sal de cura", "5g de açúcar"],
+      "preparation": [
+        "Desossar o peito de frango, caso necessário",
+        "Pesar os ingredientes e misturar",
+        "Esfregar os temperos na carne",
+        "Deixar em cura na geladeira (4 dias para cada 2cm de espessura)",
+        "Defumar a frio por 2 horas",
+        "Ensacar e cozinhar a 72°C por 2 horas"
+      ]
+    },
+
+    {
+      "title": "Frescal de Contra Filé",
+      "description": "Frescal de contra filé, simples e saboroso, temperado na medida certa para um preparo rápido no forno ou na churrasqueira.",
+      "image": "images/frescal.jpg",
+      "ingredients": ["Contra filé"],
+      "base": ["35g de sal", "2g de sal de cura"],
+      "preparation": [
+        "Aplicar os sais na carne e deixar em refrigeração por 24 horas, eliminando o excesso de água que se formar",
+        "Congelar ou assar"
+      ]
+    }
+  ]

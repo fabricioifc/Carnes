@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="has-navbar-fixed-top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carnes Maturadas - Receitas Especiais</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --background-light: #f4f4f4;
+        --background-dark: #1a1a1a;
+        --text-light: #333;
+        --text-dark: #e0e0e0;
+        --primary-color: #b23c17;
+      }
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: var(--background-light);
+        color: var(--text-light);
+      }
+      body.dark-mode {
+        background-color: var(--background-dark);
+        color: var(--text-dark);
+      }
+      body.dark-mode .recipe-card {
+        background-color: var(--background-dark);
+        border: 1px solid var(--text-dark);
+      }
+      .recipe-image-container {
+        position: relative;
+        overflow: hidden;
+      }
+      .recipe-image {
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+      .recipe-image-container:hover .recipe-image {
+        transform: scale(1.2);
+      }
+      .footer {
+        padding: 2rem 1.5rem;
+        background-color: var(--background-light);
+        color: var(--text-light);
+      }
+      body.dark-mode .footer {
+        background-color: var(--background-dark);
+        color: var(--text-dark);
+      }
+      #darkModeToggle {
+        margin-right: 10px;
+      }
+      .title {
+        color: var(--primary-color);
+      }
+      body.dark-mode .title {
+        color: #ffcccb;
+      }
+      body.dark-mode h1,
+      body.dark-mode h5,
+      body.dark-mode p,
+      body.dark-mode li {
+        color: var(--text-dark);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar is-dark is-fixed-top">
+      <div
+        class="container is-flex is-justify-content-space-between is-align-items-center"
+      >
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">🥩 Carnes Maturadas</a>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <button id="darkModeToggle" class="button is-light">🌓</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title has-text-centered">
+          Receitas de Carnes Processadas, Maturadas, Defumadas e Cozidas
+        </h1>
+        <div id="recipes" class="columns is-variable is-4 is-multiline">
+          <!-- Recipes will be dynamically inserted here -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>© 2024 Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script>
+      async function loadRecipes() {
+        try {
+          const response = await fetch("receitas.json");
+          return await response.json();
+        } catch (error) {
+          console.error("Erro ao carregar receitas:", error);
+          return [];
+        }
+      }
+
+      function createRecipeCard(recipe) {
+        return `
+          <div class="column is-12-mobile is-12-tablet is-6-desktop">
+            <div class="card recipe-card">
+              <div class="card-image recipe-image-container">
+                <figure class="image is-16by9">
+                  <img
+                    src="${recipe.image}"
+                    alt="${recipe.title}"
+                    class="recipe-image"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">${recipe.title}</p>
+                <p class="subtitle is-6">${recipe.description}</p>
+                <div class="content">
+                  <h5 class="has-text-weight-bold">Ingredientes:</h5>
+                  <ul>${recipe.ingredients
+                    .map((ing) => `<li>${ing}</li>`)
+                    .join("")}</ul>
+                  <h5 class="has-text-weight-bold">Base de Segurança:</h5>
+                  <ul>${recipe.base.map((b) => `<li>${b}</li>`).join("")}</ul>
+                  <h5 class="has-text-weight-bold">Modo de Preparo:</h5>
+                  <ol>${recipe.preparation
+                    .map((step) => `<li>${step}</li>`)
+                    .join("")}</ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+
+      document.addEventListener("DOMContentLoaded", async () => {
+        const recipesContainer = document.getElementById("recipes");
+        const darkModeToggle = document.getElementById("darkModeToggle");
+
+        const darkMode = localStorage.getItem("dark-mode");
+        if (darkMode === "enabled") {
+          document.body.classList.add("dark-mode");
+          darkModeToggle.textContent = "☀️";
+          darkModeToggle.classList.replace("is-light", "is-dark");
+        }
+
+        const recipes = await loadRecipes();
+        recipes.forEach((recipe) => {
+          recipesContainer.innerHTML += createRecipeCard(recipe);
+        });
+
+        darkModeToggle.addEventListener("click", () => {
+          document.body.classList.toggle("dark-mode");
+          const isDarkMode = document.body.classList.contains("dark-mode");
+          darkModeToggle.textContent = isDarkMode ? "☀️" : "🌓";
+          darkModeToggle.classList.toggle("is-light", !isDarkMode);
+          darkModeToggle.classList.toggle("is-dark", isDarkMode);
+          localStorage.setItem(
+            "dark-mode",
+            isDarkMode ? "enabled" : "disabled"
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
