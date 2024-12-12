@@ -185,6 +185,27 @@
     },
 
     {
+      "title": "Copa Lombo ou OSSOCOL",
+      "description": "O ossocol suíno é um corte de carne retirado da parte superior do pescoço do porco, próximo à cabeça, também conhecido como copa lombo ou simplesmente copa em algumas regiões.",
+      "image": "images/copa_lombo.jpg",
+      "ingredients": [
+        "Lombo Suíno", 
+        "0,5g de noz-moscada", 
+        "0,2g de canela em pó", 
+        "0,2g de cravo em pó", 
+        "1g de pimenta branca", 
+        "5g de colorau ou páprica doce"
+      ],
+      "base": ["30g de sal", "2g de sal de cura", "10g de açúcar"],
+      "preparation": [
+        "Ajuste o corte para não ter rebarbas",
+        "Pesar os ingredientes e misturar massageando",
+        "Deixar em cura na geladeira (4 dias para cada 2cm de espessura)",
+        "Defumar a quente se desejar e levar para maturação com temperatura controlada de 15°C e umidade de 85%",
+        "Deixar maturando até perder 35% do peso"
+      ]
+    },
+    {
       "title": "Frescal de Contra Filé",
       "description": "Frescal de contra filé, simples e saboroso, temperado na medida certa para um preparo rápido no forno ou na churrasqueira.",
       "image": "images/frescal.jpg",
